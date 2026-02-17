@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 92%;
+    --foreground: 0 0% 15%;
+
+    --card: 40 30% 97%;
+    --card-foreground: 0 0% 15%;
+
+    --popover: 40 30% 97%;
+    --popover-foreground: 0 0% 15%;
+
+    --primary: 0 53% 23%;
+    --primary-foreground: 40 30% 97%;
+
+    --secondary: 43 50% 54%;
+    --secondary-foreground: 0 0% 15%;
+
+    --muted: 35 20% 88%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 43 50% 54%;
+    --accent-foreground: 0 0% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 53% 23%;
+    --input: 35 20% 80%;
+    --ring: 43 50% 54%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 40 30% 92%;
+    --card: 0 0% 12%;
+    --card-foreground: 40 30% 92%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 40 30% 92%;
+    --primary: 0 40% 35%;
+    --primary-foreground: 40 30% 97%;
+    --secondary: 43 40% 40%;
+    --secondary-foreground: 40 30% 97%;
+    --muted: 0 0% 18%;
+    --muted-foreground: 35 15% 65%;
+    --accent: 43 40% 40%;
+    --accent-foreground: 40 30% 97%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 40% 35%;
+    --input: 0 0% 20%;
+    --ring: 43 40% 40%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
